@@ -87,7 +87,6 @@ export default function Footer() {
                 <clipPath id="clip0_1_799">
                   <rect
                     width="20"
-                    height="20"
                     fill="white"
                     transform="translate(0 0.000244141)"
                   />
