@@ -1,5 +1,4 @@
 import Header from "./home/Header";
-// import CTABox from "./home/CTABox";
 import Footer from "./home/Footer";
 import HeroSection from "@/app/home/HeroSection";
 import FeaturesSection from "@/app/home/FeaturesSection";
@@ -9,7 +8,6 @@ import RoadmapSection from "@/app/home/RoadmapSection";
 import { Providers } from "@/components/providers/privy-provider";
 
   return (
-    <Providers>
     <main>
       <HeroSection />
       <FeaturesSection />
@@ -20,4 +18,3 @@ import { Providers } from "@/components/providers/privy-provider";
     </main>
     </Providers>
   );
-}

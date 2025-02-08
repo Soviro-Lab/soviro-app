@@ -25,7 +25,6 @@ export const TypewriterText: React.FC<TypewriterTextProps> = ({ text }) => {
     }
   }, [displayedText, isTyping, text]);
 
-  return (
     <span className="border-r-2 border-black animate-pulse">
       {displayedText}
   );
