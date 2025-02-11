@@ -11,7 +11,6 @@ interface TypingAnimationProps extends MotionProps {
   as?: React.ElementType;
   startOnView?: boolean;
 }
-
 export function TypingAnimation({
   children,
   className,
@@ -54,7 +53,6 @@ export function TypingAnimation({
 
     return () => observer.disconnect();
   }, [delay, startOnView]);
-  useEffect(() => {
     if (!started) return;
 
     let i = 0;

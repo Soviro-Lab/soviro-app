@@ -56,7 +56,6 @@ export const FlickeringGrid: React.FC<FlickeringGridProps> = ({
     (canvas: HTMLCanvasElement, width: number, height: number) => {
       const dpr = window.devicePixelRatio || 1;
       canvas.width = width * dpr;
-      canvas.height = height * dpr;
       canvas.style.width = `${width}px`;
       canvas.style.height = `${height}px`;
       const cols = Math.floor(width / (squareSize + gridGap));
@@ -140,7 +139,6 @@ export const FlickeringGrid: React.FC<FlickeringGridProps> = ({
       const deltaTime = (time - lastTime) / 1000;
       lastTime = time;
 
-      updateSquares(gridParams.squares, deltaTime);
       drawGrid(
         ctx,
         canvas.width,
@@ -151,7 +149,6 @@ export const FlickeringGrid: React.FC<FlickeringGridProps> = ({
         gridParams.dpr
       );
       animationFrameId = requestAnimationFrame(animate);
-    };
 
     const resizeObserver = new ResizeObserver(() => {
       updateCanvasSize();
