@@ -3,7 +3,6 @@ interface WelcomeHeaderProps {
   version: string;
 }
 
-const getTimeBasedGreeting = (): string => {
   const hour = new Date().getHours();
   
   if (hour >= 5 && hour < 12) {
@@ -20,7 +19,6 @@ export const WelcomeHeader = ({ name, version }: WelcomeHeaderProps) => {
   
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-5">
         <button className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[#F3BA2F] px-4 py-3 bg-[#F3BA2F] text-white font-light transition duration-200 ease-linear z-100 rounded-full text-sm w-1/2">
           {version} {">"}
         </button>

@@ -30,7 +30,6 @@ export default function CTABox() {
           transition={{ duration: 0.5, delay: 0.25 }}
           viewport={{ once: true }}
           
-          className="relative p-16 bg-[#F3BA2F] rounded-2xl overflow-hidden"
         >
             <h2 className="font-offbit max-w-[750px] min-h-[96px] text-5xl text-center text-white">
               <TypingAnimation startOnView={false}>
