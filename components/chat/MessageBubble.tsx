@@ -107,7 +107,6 @@ const MessageBubble = ({ message, userName, avatarConfig }: MessageBubbleProps) 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-        >
           <span className="text-sm text-gray-600 font-offbit">
             {isUser ? userName : 'SOVIRO'}
           </span>

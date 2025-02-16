@@ -21,13 +21,11 @@ export function middleware(request: NextRequest) {
   const isAuthenticated = request.cookies.get("privy-authenticated")?.value === "true";
 
   if (!isAuthenticated) {
-    // console.log("User is not authenticated. Redirecting...");
     const url = new URL("/auth", request.url);
     return NextResponse.redirect(url);
   }
 
   // console.log("User is authenticated. Proceeding...");
-  return NextResponse.next();
 }
 
 // Matcher configuration for middleware
