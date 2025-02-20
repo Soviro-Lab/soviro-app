@@ -19,10 +19,8 @@ export const TypewriterText: React.FC<TypewriterTextProps> = ({ text }) => {
         setIsTyping(false);
         setTimeout(() => {
           setDisplayedText('');
-          setIsTyping(true);
         }, 3000);
       }
-    }
   }, [displayedText, isTyping, text]);
 
     <span className="border-r-2 border-black animate-pulse">
