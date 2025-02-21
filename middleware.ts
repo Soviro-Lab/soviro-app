@@ -9,7 +9,6 @@ export function middleware(request: NextRequest) {
   // List of restricted routes
   const blockList = ["/dashboard", "/admin", "/private"];
 
-  // Check if the route is in the block list
   const isRestricted = blockList.some((route) => pathname.startsWith(route));
 
   if (!isRestricted) {
@@ -18,10 +17,8 @@ export function middleware(request: NextRequest) {
   }
 
   // Authentication check
-  const isAuthenticated = request.cookies.get("privy-authenticated")?.value === "true";
 
   if (!isAuthenticated) {
-    const url = new URL("/auth", request.url);
     return NextResponse.redirect(url);
   }
 
