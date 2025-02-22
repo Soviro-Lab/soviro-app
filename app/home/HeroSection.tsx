@@ -160,6 +160,7 @@ export default function HeroSection() {
 
           <div className="h-[42px] px-1.5 border border-[#001A2C]/10 rounded-md flex items-center">
             <a href="https://sovirolabs.gitbook.io/" target="_blank" >
+              <button className="py-1.5 px-5 bg-[#001A2C] rounded-full flex items-center gap-2 text-sm font-medium text-white">
                 <svg
                   width="15"
                   height="15"
@@ -176,6 +177,7 @@ export default function HeroSection() {
                   <defs>
                     <clipPath id="clip0_1_784">
                       <rect
+                        width="13.8125"
                         height="13.8125"
                         fill="white"
                         transform="translate(0.570312 0.734619)"
