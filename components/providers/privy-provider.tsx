@@ -16,7 +16,6 @@ export function Providers({ children }: { children: ReactNode }) {
         config={{
         "appearance": {
           "accentColor": "#6A6FF5",
-          "theme":"#FFFFFF",
           "showWalletLoginFirst": false,
           "logo": "https://auth.privy.io/logos/privy-logo.png",
           "walletChainType": 'ethereum-only',
@@ -34,7 +33,6 @@ export function Providers({ children }: { children: ReactNode }) {
           "noPromptOnMfaRequired": false
         },
         defaultChain: bsc,
-        supportedChains: [bsc]
       }}
       >
         {children}
