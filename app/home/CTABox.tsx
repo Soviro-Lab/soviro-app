@@ -21,7 +21,6 @@ export default function CTABox() {
     }
   }, [privy.ready, privy.authenticated, router]);
   
-  return (
     <section>
       <div className="mx-auto container max-w-[1128px] px-8">
         <motion.div
