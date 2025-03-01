@@ -1,5 +1,4 @@
 import React from 'react';
-
 const LoadingSpinner = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50 bg-gray-900">
@@ -13,4 +12,3 @@ const LoadingSpinner = () => {
   );
 };
 
-export default LoadingSpinner;

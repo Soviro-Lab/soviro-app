@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { usePrivy } from "@privy-io/react-auth";
 import { useRouter } from 'next/navigation';
-import Cookies from "js-cookie";
 import { useCallback, useEffect, useState } from "react";
 
 export default function Header() {
@@ -51,7 +50,6 @@ export default function Header() {
     );
 
     const sections = ["features", "tokenomics"];
-    sections.forEach((section) => {
       const element = document.getElementById(section);
       if (element) observer.observe(element);
     });
