@@ -13,7 +13,6 @@ export const TypewriterText: React.FC<TypewriterTextProps> = ({ text }) => {
       if (displayedText.length < text.length) {
         const timeout = setTimeout(() => {
           setDisplayedText(text.slice(0, displayedText.length + 1));
-        }, 100);
         return () => clearTimeout(timeout);
       } else {
         setIsTyping(false);
