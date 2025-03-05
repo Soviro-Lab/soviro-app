@@ -14,15 +14,12 @@ export function middleware(request: NextRequest) {
   if (!isRestricted) {
     // console.log("Public route accessed or route not in block list.");
     return NextResponse.next();
-  }
 
   // Authentication check
 
   if (!isAuthenticated) {
     return NextResponse.redirect(url);
-  }
 
-  // console.log("User is authenticated. Proceeding...");
 }
 
 // Matcher configuration for middleware
