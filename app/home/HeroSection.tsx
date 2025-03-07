@@ -14,6 +14,7 @@ import img1 from "@/public/assets/images/hero-section-1.png";
 
 
 export default function HeroSection() {
+  const [isCopied, setIsCopied] = useState<boolean>(false);
   const privy = usePrivy();
   const router = useRouter();
   const handleLogin = useCallback(() => privy.login(), [privy]);

@@ -49,13 +49,11 @@ export default function Footer() {
               />
             </svg> */}
           </div>
-
           <div
             className="w-[42px] h-[2px] rounded-md flex justify-center items-center"
           >
             {/* <svg
               width="20"
-              height="20"
               viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +94,5 @@ export default function Footer() {
           </div>
         </div>
       </motion.div>
-    </footer>
   );
 }
