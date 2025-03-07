@@ -1,4 +1,5 @@
 export const NICKNAMES = [
+    'FROST',    
     'ECHO',     
     'SAGE',    
     'SKY',     
@@ -15,7 +16,9 @@ export const NICKNAMES = [
     'CLOUD',    
     'LEAF',      
     'AURA',      
+    'REEF',     
     'VALE', 
+    'MOON',     
     'PINE',    
     'EAST',     
     'PEAK',      
