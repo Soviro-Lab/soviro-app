@@ -50,7 +50,6 @@ export default function AgentsSection() {
             stroke="#30A5FF"
             strokeWidth="2.25"
             strokeLinecap="round"
-            strokeLinejoin="round"
           />
           <path
             d="M22.1592 15.3856C23.2592 16.4755 21.4992 25.3399 19.6934 25.4961C18.1784 25.6272 17.7062 22.6392 17.3871 21.6921C17.0723 20.7574 16.7217 20.4208 15.7947 20.1142C13.4398 19.3351 12.2624 18.9456 12.0293 18.3288C11.4119 16.6956 20.7543 13.9935 22.1592 15.3856Z"
@@ -107,7 +106,6 @@ export default function AgentsSection() {
             strokeWidth="2.25"
             strokeLinecap="round"
             strokeLinejoin="round"
-          />
         </svg>
       ),
       color: "#FFBA17",
@@ -261,7 +259,6 @@ export default function AgentsSection() {
               return (
                 <div
                   key={index}
-                  ref={
                     index === 0
                       ? div1Ref
                       : index === 1
