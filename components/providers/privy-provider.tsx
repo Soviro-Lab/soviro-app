@@ -27,7 +27,6 @@ export function Providers({ children }: { children: ReactNode }) {
         ],
         "embeddedWallets": {
           "createOnLogin": "all-users",
-          "requireUserPasswordOnCreate": false,
           "showWalletUIs": true
         },
           "noPromptOnMfaRequired": false
