@@ -18,22 +18,7 @@ export default function HeroSection() {
   const privy = usePrivy();
   const router = useRouter();
   const handleLogin = useCallback(() => privy.login(), [privy]);
-  const [CA, setCA] = useState("");
 
-  useEffect(() => {
-    axios.get("https://catools.dev3vds1.link/get/almaze-labs")
-      .then(response => {
-        const data = response.data
-        if (data) {
-          // console.log(`this is the data addr : ${data.address}`)
-          setCA(data[0].address);
-
-        }
-      })
-      .catch(error => {
-        console.error("Error fetching CA:", error);
-      });
-  }, []);
 
   useEffect(() => {
     if (privy?.ready) {
