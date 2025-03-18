@@ -1,6 +1,6 @@
 # Soviro: Intelligent Multi-Agent Problem-Solving Ecosystem
 
-<img src="./public/assets/images/brand/banner.png" height="400" alt="Soviro Banner"/>
+<img src="./public/assets/images/brand/banner.png" height="350" alt="Soviro Banner"/>
 
 ## Table of Contents
 
